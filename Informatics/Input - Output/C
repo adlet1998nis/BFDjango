@@ -1,4 +1,0 @@
-import math
-n = input()
-k = input()
-print(k / n)
