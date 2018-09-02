@@ -1,0 +1,10 @@
+import math
+
+a = input() 
+b = input()
+c = input()
+d = input()
+
+for index in range(a, b + 1):
+	if index % d == c:
+		print(index)
