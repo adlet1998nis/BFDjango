@@ -1,0 +1,10 @@
+import math
+
+n = input()
+now = 1
+while(now <= n):
+	print(now)
+	now *= 2
+	
+
+
