@@ -1,8 +1,0 @@
-import math
- 
-n = int(raw_input().strip())
-a = map(int, raw_input().strip().split(' '))
-cnt = 0
-for i in reversed(range(n)):
-	print(a[i])
-	
