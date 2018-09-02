@@ -1,0 +1,22 @@
+s = input()
+c1 = False
+c2 = False
+c3 = False
+c4 = False
+c5 = False
+for i in range(len(s)):
+    if s[i].isalnum():
+        c1 = True
+    if s[i].isalpha():
+        c2 = True
+    if s[i].isdigit():
+        c3 = True
+    if s[i].islower():
+        c4 = True
+    if s[i].isupper():
+        c5 = True
+print(c1)
+print(c2)
+print(c3)
+print(c4)
+print(c5)
