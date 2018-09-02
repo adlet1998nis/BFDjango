@@ -1,0 +1,19 @@
+def merge_the_tools(string, k):
+    cur = 0
+    now = ""
+    for i in range(len(string)):
+        now += string[i]
+        cur += 1
+        if cur == k:
+            dic = []
+            cur = 0
+            ans = ""
+            for j in range(len(now)):
+                if dic.count(now[j]) == 0:
+                    dic.append(now[j])
+            now = ""
+            for i in dic:
+                ans += i
+            print(ans)
+                
+                
