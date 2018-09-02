@@ -1,0 +1,12 @@
+n = int(input().strip())
+a = list(map(int, input().strip().split(' ')))
+maxi1 = -500
+for i in range(n):
+    if a[int(i)] > maxi1:
+        maxi1 = a[i]
+maxi2 = -500
+for i in range(n):
+    if a[i] > maxi2 and a[i] != maxi1:
+        maxi2 = a[i]
+print(maxi2)
+    
