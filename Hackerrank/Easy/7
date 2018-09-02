@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    whole_list = []
+    for i in range(x + 1):
+        for j in range(y + 1):
+            for k in range(z + 1):
+                cur = []
+                if i + j + k != n:
+                    cur.append(i)
+                    cur.append(j)
+                    cur.append(k)
+                    whole_list.append(cur)
+    print(whole_list)
+    
+                    
