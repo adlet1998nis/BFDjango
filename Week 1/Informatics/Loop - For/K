@@ -1,0 +1,9 @@
+import math
+n = input()
+sum = 0
+for index in range(n):
+	a = input()
+	sum += a
+print(sum)
+
+

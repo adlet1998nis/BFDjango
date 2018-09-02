@@ -1,0 +1,10 @@
+import math
+
+a = input() 
+
+for index in range(2, a + 1):
+	if a % index == 0:
+		print(index)
+		break
+
+

@@ -1,0 +1,10 @@
+import math
+n = input()
+sum = 0
+for index in range(n):
+	a = input()
+	if a == 0:
+		sum += 1
+print(sum)
+
+

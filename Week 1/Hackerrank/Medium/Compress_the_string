@@ -1,0 +1,23 @@
+string  = input()
+string += '#'
+cnt = 1
+ans = []
+for i in range(len(string) - 1):
+    if string[i] != string[i + 1]:
+        cur = []
+        cur.append('(')
+        cur.append(cnt)
+        cur.append(', ')
+        cur.append(string[i])
+        cur.append(')')
+        ans.append(cur)
+        cnt = 1
+    else:
+        cnt += 1
+        
+for now in ans:
+    y = ""
+    for j in now:
+        y += str(j)
+    print(y, end = " ")
+        

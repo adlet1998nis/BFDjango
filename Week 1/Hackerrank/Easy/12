@@ -1,0 +1,7 @@
+n = int(input())
+t = ()
+a = list(input().strip().split(' '))
+for i in a:
+    t = t + (int(i),)
+print(hash(t))
+    

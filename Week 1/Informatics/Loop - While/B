@@ -1,0 +1,10 @@
+import math
+
+n = input()
+now = 2
+while(n % now != 0):
+	now += 1
+print(now)
+	
+
+

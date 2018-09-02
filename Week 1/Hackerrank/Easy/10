@@ -1,0 +1,12 @@
+n = int(input())
+dic = {}
+for i in range(n):
+    cur = input().strip().split(' ')
+    sum = float(0)
+    for j in range(1, len(cur)):
+        sum += float(cur[j])
+    sum = sum / float(len(cur) - 1)
+    dic[cur[0]] = sum
+name = input()
+print(format(dic[name], '0.2f'))
+        
