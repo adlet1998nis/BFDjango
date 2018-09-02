@@ -1,9 +1,0 @@
-import math
-
-a = input() 
-b = input()
-
-for index in range(a, b + 1):
-	cur = int(math.sqrt(index))
-	if cur * cur == index:
-		print(index)
