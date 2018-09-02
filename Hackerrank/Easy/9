@@ -1,0 +1,29 @@
+n = int(input())
+nes_list = []
+mini = float(100000)
+for i in range(n):
+    cur = []
+    name = str(input())
+    band = float(input())
+    cur.append(name)
+    cur.append(band)
+    nes_list.append(cur)
+    if(band < mini):
+        mini = band
+mini_second = float(100000)
+for i in range(len(nes_list)):
+    if nes_list[i][1] < mini_second and nes_list[i][1] != mini:
+        mini_second = nes_list[i][1]
+
+ans = []
+for i in range(len(nes_list)):
+    if nes_list[i][1] == mini_second:
+        ans.append(nes_list[i][0])
+
+ans.sort()
+
+for i in ans:
+    print(i)
+
+
+    
